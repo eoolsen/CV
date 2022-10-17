@@ -1,0 +1,240 @@
+\documentclass[10pt,a4,sans]{article}
+
+
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[dvips]{graphicx}
+\usepackage{amsthm,amssymb,bbm}
+\usepackage{latexsym,amsmath,amsfonts,mathrsfs,xspace}
+\usepackage{lineno}
+\usepackage{ae}
+\usepackage[T1]{fontenc}
+\usepackage{ifthen}
+\usepackage{CV}
+\usepackage{fancyhdr}
+\setlength{\headheight}{12pt}
+\pagestyle{fancy}
+
+\author{Erik Olsen}
+
+
+\makeatletter
+
+
+\usepackage{geometry}
+\geometry{
+%  nofoot,
+%  nohead,
+  dvips,
+  letterpaper,
+  voffset=10pt,
+  headsep=10pt,
+  textheight=710pt,
+  textwidth=520pt,
+%  bottom=4cm,
+%  top=4cm, 
+%  left=3.5cm,
+%  right=3cm
+}
+
+
+\renewcommand{\section}{\@startsection{section}{12}
+{0mm} 
+{0.8\baselineskip} %1.0
+{0.5\baselineskip} %0.7
+{\Large\scshape
+\vspace{0.5\baselineskip}
+}}
+
+
+\renewcommand{\subsection}{\@startsection{subsection}{12}
+{0mm} 
+{0.7\baselineskip} 
+{0.2\baselineskip} 
+{\large\scshape}}
+
+
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{12}
+{0mm} 
+{0.4\baselineskip} 
+{0.2\baselineskip} 
+{\scshape}}
+\makeatother
+
+
+\chead{}
+\lhead{Erik Olsen}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+
+\setlength{\headwidth}{520pt}
+
+
+\newcommand{\tbsf}[1]{\textbf{\textsf{#1}}}
+\newcommand{\R}{\mathbbm{R}}
+
+
+\makeatletter
+\renewcommand{\maketitle}{\begin{center}
+{\bfseries\Huge \@title\par\vskip4mm
+\LARGE \@author\vskip4mm\noindent}
+\end{center}}
+\makeatother
+
+
+\begin{document}
+
+
+\thispagestyle{plain}
+
+
+\title{Curriculum Vitae}
+\maketitle
+
+
+\section*{Personlige oplysninger}
+
+
+\begin{flushleft}
+  Erik Olsen \hfill{}\\
+  Tyrrestrupvej 2 \hfill{Telefon: +45 22371919}\\
+  8270 Højbjerg \hfill{eo.olsen@gmail.com}\\
+  Danmark\\
+  \vspace{3mm}
+  Født: 22. november 1979 i Frederikshavn, Danmark\\
+  Civilstand: Samlevende.
+  
+\end{flushleft}
+
+\section*{Resume}
+
+\begin{flushleft}
+  Jeg har en kandidatgrad i matematik og mange års erfaring med at lave IT i den finansielle sektor. Dette arbejde spænder alt fra store klient server applikationer til administration af forsikringsporteføljer til high performance mobilebetalingsplatforme.
+  
+  De fleste systemer, jeg har berørt, har været i gang med en IT transformation i retning af en mere service orienteret arkitektur. At arbejde med det er en opgave, jeg finder særdeles interessant, og som jeg efterhånden har en del erfaring med. Jeg har arbejdet aktivt med alle dele i den en sådan transformation fra modernisering  og udvikling af kode, kodekvalitet, arkitektur, drift og kultur.
+  
+\end{flushleft}
+
+\section*{Faglige kompetencer}
+
+\begin{itemize}
+\item Serviceorienteret arkitektur, udvikling og drift
+\item Eventdrevne systemer
+\item Domænedrevet udvikling og design
+\item API design
+\item OAuth2 og Openid Connect (applikationssikkerhed)
+\end{itemize}
+
+\section*{Teknologioversigt}
+\begin{flushleft}
+Følgende er teknologier jeg har indgående kendskab til og meget erfaring i at bruge i mit daglige arbejde.
+\end{flushleft}
+
+
+  \begin{multicols}{2}
+    \begin{itemize}
+
+    \item Dotnet Core og ASP.Net 
+    \item RabbitMQ beskedhåndtering (EasyNetQ mfl.)
+    \item Graphite og Grafana
+    \item API Gateways (IBM Connect, WSO2 m.fl.)
+    \item Identity server
+    \item XUnit
+    
+    \item Oauth2 og OpenId Connect
+    \item ELK stakken (Elastic search, logstash og Kibana)
+    \item Prometheus
+    \item Jenkins
+    \item Go CI/CD
+    \item Sonar Cube
+
+    \end{itemize}
+    \end{multicols}
+
+\section*{Arbejde}
+
+\begin{CV}
+    \item[01/2020--] \textbf{\emph{Freelance konsulent (Mjølner)}} Arkitekt i Øknomi og Risiko, Bankdata
+    
+Mit arbejde består i at agere teknisk leder af et Proof of Technology team, det indebærer udvikling, coaching og guidance ift. hvilke opgaver der skal laves hvornår. Der er en høj grad af interessent kommunikation i dette, da resten af afdelingen skal køre på de spor POT teamet laver.
+ 
+    \item[03/2019-- 01/2020] \textbf{\emph{Freelance konsulent (Mjølner)}} Teknisk lead i Investering, Bankdata
+    
+Min rolle var teknisk lead i et team der skulle onboardes til at lave udvikling på Openshift platformen. Min rolle indeholdt alt fra parprogrammering, teknologivalg, opsætning af best practice udviklingsprocesser og coaching af de fastansatte. Udover onboarding leverede jeg også en pakke til håndtering af token baseret sikkerhed i bankdata.
+
+    \item[03/2018--03/2019] \textbf{\emph{Freelance konsulent (Mjølner)}} Freelance konsulent, Mjølner
+    
+Min rolle var udvikler på diverse små Lego projekter og som en del af et pre-sales arkitektteam, der afholdt workshops og arbejdede med tilbud.
+ 
+    \item[09/2015--03/2018] \textbf{\emph{Lead udvikler}} Lead udvikler, MobilePay 
+
+Min rolle var udvikler og teknisk lead i et team der skulle håndtere sikkerhed i MobilePay. Dette arbejde involverede et indgående arbejde med token baseret sikkerhed, og en del stakeholder management. I begyndelsen af arbejdet på dette team, var en stor del af arbejdet at få lavet arkitekturen og valgt teknologier på den nye platform vi skulle migrere til.
+
+    \item[03/2015--01/2016] \textbf{\emph{Senior udvikler}} Senior udvikler, eBay Classifieds 
+    
+    Mit arbejde bestod i almindelig udvikling på Bilbasen, og i kontinuert at arbejde med at højne kvaliteten  af løsningen i teamet.
+
+    \item[03/2015--01/2016] \textbf{\emph{Udvikler}} Udvikler, Edlund A/S 
+    
+    Mit arbejde bestod i almindelig udvikling på Skade.Net, med fokus på tredjeparts integrationer og policeberegninger.
+    
+\end{CV}
+
+\section*{Uddannelse}
+
+\begin{CV}
+    \item[2017] \textbf{\emph{TOGAF I + II Certification}} The Open Group.
+    \item[2009] \textbf{\emph{Certified Scrum Master}} Ative.
+    \item[2004] \textbf{\emph{Cand. Scient. matematik}} Aarhus Universitet.
+    \item[2002] \textbf{\emph{Bac. Scient. matematik}} Aarhus Universitet.\\
+    \emph{Grundfag: Kemi}.
+\end{CV}
+
+\section*{Kurser og konferencer}
+\begin{CV}
+
+   \item[01/ 2017] TOGAF I + II Certificering
+   
+   \item[04/ 2013] Implementing Domain Driven Design v. Vaughn Vernon
+   
+    \item[05/ 2011] Test Driven Development and Refactoring in C$\#$
+
+    \item[07/ 2010] Developmentor kursus. Design Patterns.
+
+    \item[10/ 2009] Best Brains kursus. Avanceret projektstyring med kanban og lean.
+
+    \item[10/ 2009] Lean software development. Halvdags kursus med Mary and Tom Pop-
+pendieck.
+
+    \item[10/ 2009] XUnit Test patterns. Halvdags kursus med Gerard Meszaros.
+
+    \item[10/ 2009] PDC2008, Professional developers conference 2008.
+
+    \item[10/ 2009] Ative kursus. Certificeret scrum master kursus.
+
+    \item[09/ 2007] Præsentationskursus, DIEU.
+\end{CV}
+
+\section*{Andre kundskaber}
+
+\begin{flushleft} {\sc Sprogkundskaber:}
+  Flydende mundtligt og skriftligt engelsk.
+
+\end{flushleft}
+
+\section*{Personlige interesser}
+
+\begin{CV}
+  \item[\emph{Aktiv livsstil}:] Jeg cykler både i godt og skidt vejr. Jeg elsker den afstressende effekt turene har på mig, og at man kan se resultatet af målrettet træning. Jeg elsker at cykle i bjergene og har deltaget i flere løb i Alperne. Jeg er draget af konkurrenceaspektet, men også af muligheden for at nyde en cappuccino med en fantastisk udsigt.
+\end{CV}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

@@ -1,0 +1,244 @@
+\documentclass[10pt,a4,sans]{article}
+
+
+\usepackage[danish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage[dvips]{graphicx}
+\usepackage{amsthm,amssymb,bbm}
+\usepackage{latexsym,amsmath,amsfonts,mathrsfs,xspace}
+\usepackage{lineno}
+\usepackage{ae}
+\usepackage[T1]{fontenc}
+\usepackage{ifthen}
+\usepackage{CV}
+\usepackage{fancyhdr}
+\setlength{\headheight}{12pt}
+\pagestyle{fancy}
+
+\author{Erik Olsen}
+
+
+\makeatletter
+
+
+\usepackage{geometry}
+\geometry{
+%  nofoot,
+%  nohead,
+  dvips,
+  letterpaper,
+  voffset=10pt,
+  headsep=10pt,
+  textheight=710pt,
+  textwidth=520pt,
+%  bottom=4cm,
+%  top=4cm, 
+%  left=3.5cm,
+%  right=3cm
+}
+
+
+\renewcommand{\section}{\@startsection{section}{12}
+{0mm} 
+{0.8\baselineskip} %1.0
+{0.5\baselineskip} %0.7
+{\Large\scshape
+\vspace{0.5\baselineskip}
+}}
+
+
+\renewcommand{\subsection}{\@startsection{subsection}{12}
+{0mm} 
+{0.7\baselineskip} 
+{0.2\baselineskip} 
+{\large\scshape}}
+
+
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{12}
+{0mm} 
+{0.4\baselineskip} 
+{0.2\baselineskip} 
+{\scshape}}
+\makeatother
+
+
+\chead{}
+\lhead{Erik Olsen}
+\rhead{\thepage}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+
+
+\setlength{\headwidth}{520pt}
+
+
+\newcommand{\tbsf}[1]{\textbf{\textsf{#1}}}
+\newcommand{\R}{\mathbbm{R}}
+
+
+\makeatletter
+\renewcommand{\maketitle}{\begin{center}
+{\bfseries\Huge \@title\par\vskip4mm
+\LARGE \@author\vskip4mm\noindent}
+\end{center}}
+\makeatother
+
+
+\begin{document}
+
+
+\thispagestyle{plain}
+
+
+\title{Curriculum Vitae}
+\maketitle
+
+
+\section*{Personal information}
+
+
+\begin{flushleft}
+  Erik Olsen \hfill{}\\
+  Tyrrestrupvej 2 \hfill{Telephone: +45 22371919}\\
+  8270 Højbjerg \hfill{eo.olsen@gmail.com}\\
+  Denmark\\
+  \vspace{3mm}
+  Born: 22nd of November 1979 in Frederikshavn, Denmark\\
+  Marital status: Married.
+  
+\end{flushleft}
+
+\section*{Resume}
+
+\begin{flushleft}
+I have a masters in mathematics and many years of experience of building IT in the financial sector. This work spans everything from large client server applications handling insurance policy portfolios to high performing mobile payment platforms.  
+
+In most cases my work has been part of an IT transformation of splitting the domain into smaller business domains and services by applying best practices from domain driven design and micro services. I have hands on in every part of this journey from decomposing the problem space, doing the system design to actually coding, testing and deploying the solution.
+   
+\end{flushleft}
+
+\section*{Technical competencies}
+
+\begin{itemize}
+\item Service oriented archetecture, development and dev-ops
+\item Event driven systems
+\item Domain driven design and development
+\item API design
+\item OAuth2 og Openid Connect (application security)
+\end{itemize}
+
+\section*{Technology overview}
+\begin{flushleft}
+I have intimate knowledge and deep hands on experience with the following technologies.
+\end{flushleft}
+
+
+  \begin{multicols}{2}
+    \begin{itemize}
+
+    \item Dotnet Core og ASP.Net 
+    \item RabbitMQ message broker (EasyNetQ mfl.)
+    \item Kafka
+    \item Graphite og Grafana
+    \item API Gateways (Apigee, WSO2 m.fl.)
+    \item Identity server
+    \item XUnit
+    
+    \item Oauth2 og OpenId Connect
+    \item ELK stack (Elastic search, logstash og Kibana)
+    \item Docker
+    \item Kubernetes
+    \item Jenkins
+    \item Go CI/CD
+    \item Prometheus
+
+    \end{itemize}
+    \end{multicols}
+
+\section*{Work}
+
+\begin{CV}
+    \item[03/2022-- 01/2023] \textbf{\emph{Freelance consultant}} Architect for the Lending and Credit colony, Lunar
+
+Spearheading new initiatives and sparring with developers on all things development and cloud related, that includes automated testing, service design and domain design.
+
+    \item[08/2021-- 06/2022] \textbf{\emph{Freelance consultant}} Lead developer and Architect, OK a.m.b.a.
+
+I was developer and architect on a team set out to modernize the Fuel delivery process. I was leading the development, technology choices, teaching best practices, designing the system and reviewing code.      
+
+    \item[01/2020-- 08/2021] \textbf{\emph{Lead developer}} Api tribe, Danske Bank
+
+I was developer and architect on a team set out to API enable core banking in one of the largest banks in Denmark. I was leading the development, technology choices, teaching best practices, designing the system and reviewing code. I also facilitated a fair bit of DDD workshops used to decompose the problem space before starting development.
+
+    \item[03/2019-- 01/2020] \textbf{\emph{Freelance consultant (Mjølner)}} Technical lead in Investment, Bankdata
+    
+My role was technical lead on a team that was about start developing applications on an on prem cloud (Openshift). My role contained everything from pairing, technology choices, setup of best practices development proceses, and coaching of the full time employees. Apart from everyday development, I also authored a package to handle token based security in the Openshift applications we were building.
+
+    \item[03/2018--03/2019] \textbf{\emph{Freelance consultant (Mjølner)}} Freelance consultant, Mjølner
+    
+I was developer on small Lego projects, and doing pre-sales as part of an architect team. The pre sales work included domain discovery using DDD methodologies (Event Storming and contect mapping) and writing IT project propositions.
+ 
+    \item[09/2015--03/2018] \textbf{\emph{Lead developer}} Lead developer, MobilePay 
+
+I was developer and technical lead in a team that was handling application security in MobilePay. This involved a deep understanding and knowledge of token based security, and some stakeholder management.
+
+    \item[03/2015--01/2016] \textbf{\emph{Senior developer}} Senior developer, eBay Classifieds 
+    
+    Developer on bilbasen.dk, continously working on increasing quality and delivery on that platform.
+
+    \item[03/2015--01/2016] \textbf{\emph{Developer}} Developer, Edlund A/S 
+    
+    Development on Skade.Net, with a focus on integrations and policy calculations.
+    
+\end{CV}
+
+\section*{Education}
+
+\begin{CV}
+    \item[2017] \textbf{\emph{TOGAF I + II Certification}} The Open Group.
+    \item[2009] \textbf{\emph{Certified Scrum Master}} Ative.
+    \item[2004] \textbf{\emph{Cand. Scient. mathematics}} Aarhus University.
+    \item[2002] \textbf{\emph{Bac. Scient. mathematics}} Aarhus University.
+\end{CV}
+
+\section*{Courses and conferences}
+\begin{CV}
+
+   \item[05/ 2022] NDC Porto
+
+   \item[01/ 2017] TOGAF I + II Certification
+   
+   \item[04/ 2013] Implementing Domain Driven Design v. Vaughn Vernon
+   
+    \item[05/ 2011] Test Driven Development and Refactoring in C$\#$
+
+    \item[07/ 2010] Developmentor Course. Design Patterns.
+
+    \item[10/ 2009] Best Brains Course. Advanced project management with kanban og lean.
+
+    \item[10/ 2009] Lean software developmen by Mary and Tom Poppendieck.
+
+    \item[10/ 2009] XUnit Test patterns by Gerard Meszaros.
+
+    \item[10/ 2009] PDC2008, Professional developers conference 2008.
+
+    \item[10/ 2009] Certified scrum master course, by Ative.
+
+    \item[09/ 2007] Presentation course, DIEU.
+\end{CV}
+
+\section*{Other skills}
+
+\begin{flushleft} {\sc Languages:}
+  Fluent oral and written English.
+
+\end{flushleft}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
